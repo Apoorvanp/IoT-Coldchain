@@ -21,7 +21,8 @@ services:
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
 
     depends_on:
-      - mosquitto
+      mosquitto:
+        condition: service_started
     environment:
       - INFLUXDB_URL=http://influxdb:8086
     networks:
