@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+  mosquitto:
+    container_name: mqtt1
+    image: eclipse-mosquitto
+    restart: always
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
+    ports:
+      - 1883:1883
+      - 9001:9001
+  telegraf:
+    container_name: telegraf1
+    image: telegraf
+    restart: always
+    volumes:
+      # - ./telegraf:/telegraf/telegraf.conf
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+
+    depends_on:
+      - mosquitto
+    environment:
+      - INFLUXDB_URL=http://influxdb:8086
+    networks:
+      - mynet
+
+volumes:
+  config:
+  data:
+  log:
+
+networks:
+  mynet:
