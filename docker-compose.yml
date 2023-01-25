@@ -1,8 +1,10 @@
-version: '3.9'
 
+
+version: '3.9'
+ 
 services:
-  mosquitto:
-    container_name: mqtt1
+  mqtt:
+    container_name: coldchain-mqtt
     image: eclipse-mosquitto
     restart: always
     volumes:
@@ -12,26 +14,77 @@ services:
     ports:
       - 1883:1883
       - 9001:9001
+    networks:
+      - mynet
+  influxdb:
+    container_name: coldchain-influx
+    image: influxdb:latest
+    ports:
+      - '8086:8086'
+    volumes:
+      - ./influxdb-storage:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=Colchain
+      - INFLUXDB_ADMIN_USER=ApooJon
+      - INFLUXDB_ADMIN_PASSWORD=helloworld
+    networks:
+      - mynet
   telegraf:
-    container_name: telegraf1
+    container_name: coldchain-telegraf
     image: telegraf
     restart: always
     volumes:
       # - ./telegraf:/telegraf/telegraf.conf
       - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
-
+ 
     depends_on:
-      mosquitto:
+      mqtt:
+        condition: service_started
+      influxdb:
         condition: service_started
     environment:
       - INFLUXDB_URL=http://influxdb:8086
     networks:
       - mynet
-
+  grafana:
+    container_name: coldchain-grafana
+    image: grafana/grafana
+    # image: grafana/grafana-oss:8.4.3
+    restart: always
+    volumes:
+      - ./grafana-data:/var/lib/grafana
+    ports:
+      - '3000:3000'
+    networks:
+      - mynet
+    depends_on:
+      influxdb:
+        condition: service_started
+  openhab:
+    image: openhab/openhab
+    container_name: coldchain-openhab
+    restart: always
+    networks:
+      - mynet
+    ports:
+      - "9876:8080"
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "./openhab_addons:/openhab/addons"
+      - "./openhab_conf:/openhab/conf"
+      - "./openhab_userdata:/openhab/userdata"
+    environment:
+      OPENHAB_HTTP_PORT: "8080"
+      OPENHAB_HTTPS_PORT: "8443"
+      EXTRA_JAVA_OPTS: "-Duser.timezone=Europe/Berlin"
+ 
 volumes:
   config:
   data:
   log:
-
+  influxdb-storage:
+ 
 networks:
   mynet:
+ 
