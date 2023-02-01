@@ -4,21 +4,21 @@ import it.univaq.coldchain.api.CoolingStatus
 import org.springframework.stereotype.Component
 
 @Component
-class Temperature {
-    val temperatureList = mutableListOf(
-            TemperatureReport("t1b1", 0.0, false),
-            TemperatureReport("t1b2", 0.0, false),
-            TemperatureReport("t2b1", 0.0, false)
+class Humidity {
+    val humidityList = mutableListOf(
+            HumidityReport("t1b1", 50.0, false),
+            HumidityReport("t1b2", 50.0, false),
+            HumidityReport("t2b1", 50.0, false)
     )
 
-    fun find(label: String): TemperatureReport {
-        return temperatureList.first { it.id == label }
+    fun find(label: String): HumidityReport {
+        return humidityList.first { it.id == label }
     }
 }
 
-data class TemperatureReport(val id: String, var value: Double, var isCooling: Boolean) {
+data class HumidityReport(val id: String, var value: Double, var isCooling: Boolean) {
     fun incrementAndGet(): Double {
-        val delta = Math.random()
+        val delta = Math.random() * 3
         value = if (isCooling) {
             ("%.2f".format(value - delta).toDouble())
         } else {
