@@ -81,6 +81,17 @@ services:
       OPENHAB_HTTP_PORT: "8080"
       OPENHAB_HTTPS_PORT: "8443"
       EXTRA_JAVA_OPTS: "-Duser.timezone=Europe/Berlin"
+  reporter:
+    image: reporter:latest
+    container_name: coldchain-reporter
+    restart: always
+    networks:
+      - mynet
+    ports:
+      - "8080:8080"
+    depends_on:
+      mqtt:
+        condition: service_started
  
 volumes:
   config:
