@@ -1,0 +1,361 @@
+{
+  "overview": {
+    "class": "org.openhab.core.ui.components.RootUIComponent",
+    "value": {
+      "uid": "overview",
+      "tags": [],
+      "props": {
+        "parameters": [],
+        "parameterGroups": []
+      },
+      "timestamp": "Feb 1, 2023, 3:36:18 PM",
+      "component": "oh-layout-page",
+      "config": {
+        "label": "Overview"
+      },
+      "slots": {
+        "default": [
+          {
+            "component": "oh-block",
+            "config": {},
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-grid-row",
+                  "config": {},
+                  "slots": {
+                    "default": [
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#45b6fe",
+                                "item": "t1b1_pressure",
+                                "title": "T1B1 Current Pressure"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "blue",
+                                "item": "T1B1_Pressure_Switch_State",
+                                "title": "T1B1 Pressure Valve Switch"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#45b6fe",
+                                "item": "t1b2_pressure",
+                                "title": "T1B2 Current Pressure"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "blue",
+                                "item": "T1B2_Pressure_Switch_State",
+                                "title": "T1B2 Pressure Valve Switch"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#45b6fe",
+                                "item": "t2b1_pressure",
+                                "title": "T2B1 Current Pressure"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "blue",
+                                "item": "T2B1_Pressure_Switch_State",
+                                "title": "T2B1 Pressure Valve Switch"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "component": "oh-block",
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "t1b1",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T1B1 Current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "Switch_Status_State",
+                    "title": "T1B1 Switch Status"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "t1b2",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T1B2 current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "T1B2_Temperature_Switch_State",
+                    "title": "T1B2 Switch Status"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "item": "t2b1",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T2B1 current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "T2B1_Temperature_Switch_State",
+                    "title": "T2B1 Switch Status"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "component": "oh-block",
+            "config": {},
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-grid-row",
+                  "config": {},
+                  "slots": {
+                    "default": [
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#a3c585",
+                                "item": "t1b1_humidity",
+                                "title": "T1B1 Current Humidity Percentage"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "green",
+                                "item": "T1B1_Humidity_Switch_State",
+                                "title": "T1B1 Dehumidifer Switch"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#a3c585",
+                                "item": "t1b2_humidity",
+                                "title": "T1B2 Current Humidity Percentage"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "green",
+                                "item": "T1B2_Humidity_Switch_State",
+                                "title": "T1B2 Dehumidifier Switch"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-gauge-card",
+                              "config": {
+                                "bgColor": "#a3c585",
+                                "item": "t2b1_humidity",
+                                "title": "T2B1 Current Humidity Percentage"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "component": "oh-grid-col",
+                        "config": {},
+                        "slots": {
+                          "default": [
+                            {
+                              "component": "oh-toggle-card",
+                              "config": {
+                                "color": "green",
+                                "item": "T2B1_Humidity_Switch_State",
+                                "title": "T2B1 Dehumidifier Switch"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "masonry": [
+          {
+            "component": "oh-masonry",
+            "slots": {
+              "default": [
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "bgColor": "#ff9d5c",
+                    "item": "t1b1",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T1B1 Current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "Switch_Status_State",
+                    "title": "T1B1 Switch Status"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "bgColor": "#ff9d5c",
+                    "item": "t1b2",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T1B2 current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "T1B2_Temperature_Switch_State",
+                    "title": "T1B2 Switch Status"
+                  }
+                },
+                {
+                  "component": "oh-gauge-card",
+                  "config": {
+                    "bgColor": "#ff9d5c",
+                    "item": "t2b1",
+                    "max": 12.0,
+                    "min": 0.0,
+                    "title": "T2B1 current temperature"
+                  }
+                },
+                {
+                  "component": "oh-toggle-card",
+                  "config": {
+                    "item": "T2B1_Temperature_Switch_State",
+                    "title": "T2B1 Switch Status"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

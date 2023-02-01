@@ -1,0 +1,16 @@
+{
+  "expire:T1B1_Temperature": {
+    "class": "org.openhab.core.items.Metadata",
+    "value": {
+      "key": {
+        "segments": [
+          "expire",
+          "T1B1_Temperature"
+        ],
+        "uid": "expire:T1B1_Temperature"
+      },
+      "value": "0h0m30s",
+      "configuration": {}
+    }
+  }
+}

@@ -1,0 +1,29 @@
+2023-02-01 18:21:34.015 [INFO ] [.core.model.lsp.internal.ModelServer] - Started Language Server Protocol (LSP) service on port 5007
+2023-02-01 18:21:34.809 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Started HABPanel at /habpanel
+2023-02-01 18:21:34.989 [WARN ] [ty.util.ssl.SslContextFactory.config] - Trusting all certificates configured for Client@44dc6871[provider=null,keyStore=null,trustStore=null]
+2023-02-01 18:21:34.991 [WARN ] [ty.util.ssl.SslContextFactory.config] - No Client EndPointIdentificationAlgorithm configured for Client@44dc6871[provider=null,keyStore=null,trustStore=null]
+2023-02-01 18:21:35.025 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:e4394376c6'.
+2023-02-01 18:21:35.036 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:de13633318'.
+2023-02-01 18:21:35.045 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:2e512d80cb'.
+2023-02-01 18:21:35.054 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:43f2dd7ad9'.
+2023-02-01 18:21:35.059 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:a3fc21c379'.
+2023-02-01 18:21:35.072 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d541fa109c'.
+2023-02-01 18:21:35.075 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:dd24f8ce3b'.
+2023-02-01 18:21:35.077 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:fecd654f7d'.
+2023-02-01 18:21:35.080 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d75735bc22'.
+2023-02-01 18:21:35.262 [INFO ] [.transport.mqtt.MqttBrokerConnection] - Starting MQTT broker connection to 'mqtt' with clientid 08e8fe56-0a16-41b1-84f4-b252b650e149
+2023-02-01 18:21:39.887 [INFO ] [e.automation.internal.RuleEngineImpl] - Rule engine started.
+2023-02-01 18:40:36.263 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Stopped HABPanel
+2023-02-01 18:40:36.338 [INFO ] [basic.internal.servlet.WebAppServlet] - Stopped Basic UI
+2023-02-01 18:40:36.704 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b2_pressure' needed for rule '1dcd0a8d75' removed. Trigger '2' will no longer work.
+2023-02-01 18:40:36.705 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't2b1_pressure' needed for rule '1dcd0a8d75' removed. Trigger '3' will no longer work.
+2023-02-01 18:40:36.706 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Humidity' needed for rule 'fa209338f3' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.706 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b1_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.708 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b2_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '2' will no longer work.
+2023-02-01 18:40:36.708 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b2' needed for rule 'f01b4833b6' removed. Trigger '4' will no longer work.
+2023-02-01 18:40:36.709 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't2b1' needed for rule 'f01b4833b6' removed. Trigger '5' will no longer work.
+2023-02-01 18:40:36.709 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b1_pressure' needed for rule '1dcd0a8d75' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.710 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Temperature' needed for rule '9801bc9344' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.711 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Pressure' needed for rule 'd99ad0369c' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.711 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't1b1' needed for rule 'f01b4833b6' removed. Trigger '1' will no longer work.
+2023-02-01 18:40:36.712 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 't2b1_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '3' will no longer work.

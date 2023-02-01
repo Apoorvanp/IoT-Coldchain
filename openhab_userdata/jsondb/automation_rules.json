@@ -1,0 +1,242 @@
+{
+  "1dcd0a8d75": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "t1b1_pressure"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "2",
+          "configuration": {
+            "itemName": "t1b2_pressure"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "3",
+          "configuration": {
+            "itemName": "t2b1_pressure"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val tag \u003d triggeringItemName;\n\nval item \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(triggeringItemName);\nval currentValue \u003d item.state;\n\nif(currentValue \u003e 1100|hPa) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/pressure/\" + tag.substring(0,4) + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n  if(toggleStatus \u003d\u003d \"false\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/pressure/\" + tag.substring(0,4) + \"/toggle\")\n  }\n} else if(currentValue \u003c 1000|hPa) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/pressure/\" + tag.substring(0,4) + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n\n  if(toggleStatus \u003d\u003d \"true\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/pressure/\" + tag.substring(0,4) + \"/toggle\")\n  }\n}",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "1dcd0a8d75",
+      "name": "Close pressure valve when pressure too low",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "Close pressure valve when pressure too low"
+    }
+  },
+  "9801bc9344": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "MQTT_Broker_Temperature"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "2",
+          "configuration": {
+            "script": "val tag \u003d transform(\"JSONPATH\", \"$.tag\", MQTT_Broker_Temperature.state.toString);\n\nval value \u003d transform(\"JSONPATH\", \"$.value\", MQTT_Broker_Temperature.state.toString);\n\nval truck_box \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(tag);\n\ntruck_box.postUpdate(value);",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "9801bc9344",
+      "name": "JSON value extraction for temperature",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "JSON Transformation from temperature json to value"
+    }
+  },
+  "bdb79a3a7f": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "t1b1_humidity"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "2",
+          "configuration": {
+            "itemName": "t1b2_humidity"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "3",
+          "configuration": {
+            "itemName": "t2b1_humidity"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "4",
+          "configuration": {
+            "script": "val tag \u003d triggeringItemName;\n\nval item \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(triggeringItemName);\nval currentValue \u003d item.state;\n\nif(currentValue \u003e 75) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/humidity/\" + tag.substring(0,4) + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n  if(toggleStatus \u003d\u003d \"false\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/humidity/\" + tag.substring(0,4) + \"/toggle\")\n  }\n} else if(currentValue \u003c 50) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/humidity/\" + tag.substring(0,4) + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n\n  if(toggleStatus \u003d\u003d \"true\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/humidity/\" + tag.substring(0,4) + \"/toggle\")\n  }\n}",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "bdb79a3a7f",
+      "name": "Switch on dehumidifier if humidity too high",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "Switch on dehumidifier if humidity too high"
+    }
+  },
+  "d99ad0369c": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "MQTT_Broker_Pressure"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "2",
+          "configuration": {
+            "script": "val tag \u003d transform(\"JSONPATH\", \"$.tag\", MQTT_Broker_Pressure.state.toString);\n\nval value \u003d transform(\"JSONPATH\", \"$.value\", MQTT_Broker_Pressure.state.toString);\n\nval truck_box \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(tag + \"_pressure\");\n\ntruck_box.postUpdate(value);",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "d99ad0369c",
+      "name": "JSON value extraction for pressure",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "JSON value extraction for pressure"
+    }
+  },
+  "f01b4833b6": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "t1b1"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "4",
+          "configuration": {
+            "itemName": "t1b2"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        },
+        {
+          "id": "5",
+          "configuration": {
+            "itemName": "t2b1"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "3",
+          "configuration": {
+            "script": "val tag \u003d triggeringItemName;\n\nval item \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(triggeringItemName);\nval currentValue \u003d item.state;\n\nif(currentValue \u003e 10|°C) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/temperature/\" + tag + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n\n  if(toggleStatus \u003d\u003d \"false\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/temperature/\" + tag + \"/toggle\")\n  }\n} else if(currentValue \u003c 2|°C) {\n  val toggleStatusResponse \u003d sendHttpGetRequest(\"http://host.docker.internal:8080/api/v1/toggle/temperature/\" + tag + \"/status\");\n\n  val toggleStatus \u003d transform(\"JSONPATH\", \"$.isCooling\", toggleStatusResponse);\n\n  if(toggleStatus \u003d\u003d \"true\") {\n    val response \u003d sendHttpPostRequest(\"http://host.docker.internal:8080/api/v1/temperature/\" + tag + \"/toggle\")\n  }\n}",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "f01b4833b6",
+      "name": "Switch on cooling when temp high",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "Switch on cooling when temp high"
+    }
+  },
+  "fa209338f3": {
+    "class": "org.openhab.core.automation.dto.RuleDTO",
+    "value": {
+      "triggers": [
+        {
+          "id": "1",
+          "configuration": {
+            "itemName": "MQTT_Broker_Humidity"
+          },
+          "type": "core.ItemStateUpdateTrigger"
+        }
+      ],
+      "conditions": [],
+      "actions": [
+        {
+          "inputs": {},
+          "id": "2",
+          "configuration": {
+            "script": "val tag \u003d transform(\"JSONPATH\", \"$.tag\", MQTT_Broker_Humidity.state.toString);\n\nval value \u003d transform(\"JSONPATH\", \"$.value\", MQTT_Broker_Humidity.state.toString);\n\nval truck_box \u003d org.openhab.core.model.script.ScriptServiceUtil.getItemRegistry.getItem(tag + \"_humidity\");\n\ntruck_box.postUpdate(value);",
+            "type": "application/vnd.openhab.dsl.rule"
+          },
+          "type": "script.ScriptAction"
+        }
+      ],
+      "configuration": {},
+      "configDescriptions": [],
+      "uid": "fa209338f3",
+      "name": "JSON value extraction for humidity",
+      "tags": [],
+      "visibility": "VISIBLE",
+      "description": "JSON Transformation from humidity json to value"
+    }
+  }
+}
