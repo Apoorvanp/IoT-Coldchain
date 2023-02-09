@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.openhab.transform.jsonpath-3.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/openhab_userdata/tmp/mvn/org/openhab/addons/bundles/org.openhab.transform.jsonpath/3.4.1/org.openhab.transform.jsonpath-3.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

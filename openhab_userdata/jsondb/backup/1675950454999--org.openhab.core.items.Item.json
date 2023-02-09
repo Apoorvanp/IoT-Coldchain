@@ -1,0 +1,270 @@
+{
+  "Box_1_Cooling_Switch_Temperature_Box1_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch",
+        "Temperature"
+      ],
+      "label": "Temperature_Box1_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_1_Dehumidifer_Humidity_Box1_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Humidity_Box1_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_1_Pressure_Valve_Pressure_Box1_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Pressure_Box1_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_1_humidity": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [
+        "Humidity",
+        "Point"
+      ],
+      "label": "Box_1_humidity",
+      "category": "humidity"
+    }
+  },
+  "Box_1_pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Pressure",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_1_pressure",
+      "category": "pressure"
+    }
+  },
+  "Box_1_temperature": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Temperature",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_1_temperature",
+      "category": "temperature"
+    }
+  },
+  "Box_2_Cooling_Switch_Temperature_Box2_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch",
+        "Temperature"
+      ],
+      "label": "Temperature_Box2_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_2_Dehumidifier_Humidity_Box2_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Humidity_Box2_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_2_Pressure_Valve_Pressure_Box2_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Pressure_Box2_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_2_humidity": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [
+        "Humidity",
+        "Point"
+      ],
+      "label": "Box_2_humidity",
+      "category": "humidity"
+    }
+  },
+  "Box_2_pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Pressure",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_2_pressure",
+      "category": "pressure"
+    }
+  },
+  "Box_2_temperature": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Temperature",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_2_temperature",
+      "category": "temperature"
+    }
+  },
+  "Box_3_Cooling_Switch_Temperature_Box3_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch",
+        "Temperature"
+      ],
+      "label": "Temperature_Box3_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_3_Dehumidifier_Humidity_Box3_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Humidity_Box3_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_3_Pressure_Valve_Pressure_Box3_Switch_Status": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "Pressure_Box3_Switch_Status",
+      "category": "switch"
+    }
+  },
+  "Box_3_humidity": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number",
+      "tags": [
+        "Humidity",
+        "Point"
+      ],
+      "label": "Box_3_humidity",
+      "category": "humidity"
+    }
+  },
+  "Box_3_pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Pressure",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_3_pressure",
+      "category": "pressure"
+    }
+  },
+  "Box_3_temperature": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Number:Temperature",
+      "tags": [
+        "Point"
+      ],
+      "label": "Box_3_temperature",
+      "category": "temperature"
+    }
+  },
+  "MQTT_Broker_Humidity": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [
+        "Point"
+      ],
+      "label": "Humidity",
+      "category": "humidity"
+    }
+  },
+  "MQTT_Broker_Pressure": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [
+        "Point"
+      ],
+      "label": "Pressure",
+      "category": "pressure"
+    }
+  },
+  "MQTT_Broker_Temperature": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [],
+      "label": "Temperature",
+      "category": "text"
+    }
+  },
+  "T2B1_Temperature_Switch_State": {
+    "class": "org.openhab.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [
+        "Switch"
+      ],
+      "label": "T2B1_Temperature_Switch_State",
+      "category": "switch"
+    }
+  }
+}

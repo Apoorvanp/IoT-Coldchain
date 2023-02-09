@@ -6,17 +6,17 @@ import org.springframework.stereotype.Component
 @Component
 class Temperature {
     val temperatureList = mutableListOf(
-            TemperatureReport("t1b1", 0.0, false),
-            TemperatureReport("t1b2", 0.0, false),
-            TemperatureReport("t2b1", 0.0, false)
+            TemperatureReport("1", "1", 0.0, false),
+            TemperatureReport("1", "2", 0.0, false),
+            TemperatureReport("2", "3", 0.0, false)
     )
 
-    fun find(label: String): TemperatureReport {
-        return temperatureList.first { it.id == label }
+    fun find(boxId: String): TemperatureReport {
+        return temperatureList.first() { it.boxId == boxId }
     }
 }
 
-data class TemperatureReport(val id: String, var value: Double, var isCooling: Boolean) {
+data class TemperatureReport(val truckId: String, val boxId: String, var value: Double, var isCooling: Boolean) {
     fun incrementAndGet(): Double {
         val delta = Math.random()
         value = if (isCooling) {

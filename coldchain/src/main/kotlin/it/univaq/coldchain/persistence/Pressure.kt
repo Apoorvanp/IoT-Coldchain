@@ -6,17 +6,17 @@ import org.springframework.stereotype.Component
 @Component
 class Pressure {
     val pressureList = mutableListOf(
-            PressureReport("t1b1", 1000.0, false),
-            PressureReport("t1b2", 1000.0, false),
-            PressureReport("t2b1", 1000.0, false)
+            PressureReport("1", "1", 1000.0, false),
+            PressureReport("1", "2", 1000.0, false),
+            PressureReport("2", "3", 1000.0, false)
     )
 
-    fun find(label: String): PressureReport {
-        return pressureList.first { it.id == label }
+    fun find(boxId: String): PressureReport {
+        return pressureList.first { it.boxId == boxId }
     }
 }
 
-data class PressureReport(val id: String, var value: Double, var isCooling: Boolean) {
+data class PressureReport(val truckId: String, val boxId: String, var value: Double, var isCooling: Boolean) {
     fun incrementAndGet(): Double {
         val delta = Math.random()*10
         value = if (isCooling) {

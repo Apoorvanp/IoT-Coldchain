@@ -25,20 +25,21 @@ class ColdchainReporter(val temperature: Temperature, val pressure: Pressure, va
 
     @Scheduled(fixedRate = 5000L)
     fun report() {
+
         temperature.temperatureList.forEach {
-            val payload = mapper.writeValueAsString(ColdchainReport(it.id, it.incrementAndGet()))
+            val payload = mapper.writeValueAsString(ColdchainReport(it.truckId, it.boxId, it.incrementAndGet()))
             mqttDatasource.publish("temperature", MqttMessage(payload.toByteArray()))
 
         }
         pressure.pressureList.forEach {
-            val payload = mapper.writeValueAsString(ColdchainReport(it.id, it.incrementAndGet()))
+            val payload = mapper.writeValueAsString(ColdchainReport(it.truckId, it.boxId, it.incrementAndGet()))
             mqttDatasource.publish("pressure", MqttMessage(payload.toByteArray()))
         }
         humidity.humidityList.forEach {
-            val payload = mapper.writeValueAsString(ColdchainReport(it.id, it.incrementAndGet()))
+            val payload = mapper.writeValueAsString(ColdchainReport(it.truckId, it.boxId, it.incrementAndGet()))
             mqttDatasource.publish("humidity", MqttMessage(payload.toByteArray()))
         }
     }
 }
 
-data class ColdchainReport(val tag: String, val value: Double)
+data class ColdchainReport(val truckId: String, val tag: String, val value: Double)

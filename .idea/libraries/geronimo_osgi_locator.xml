@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="geronimo-osgi-locator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/openhab_userdata/cache/org.eclipse.osgi/59/0/.cp/lib/geronimo-osgi-locator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

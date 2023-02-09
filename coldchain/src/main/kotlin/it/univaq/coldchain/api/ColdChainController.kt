@@ -12,34 +12,34 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api/v1")
 class ColdChainController(val temperature: Temperature, val humidity: Humidity, val pressure: Pressure) {
-    @GetMapping("/toggle/temperature/{label}/status")
-    fun temperatureStatus(@PathVariable label: String): CoolingStatus {
-        return CoolingStatus(temperature.find(label).isCooling)
+    @GetMapping("/toggle/temperature/{boxId}/status")
+    fun temperatureStatus(@PathVariable boxId: String): CoolingStatus {
+        return CoolingStatus(temperature.find(boxId).isCooling)
     }
 
-    @PostMapping("/temperature/{label}/toggle")
-    fun toggleTemperature(@PathVariable label: String): CoolingStatus {
-        return temperature.find(label).toggle()
+    @PostMapping("/temperature/{boxId}/toggle")
+    fun toggleTemperature(@PathVariable boxId: String): CoolingStatus {
+        return temperature.find(boxId).toggle()
     }
 
-    @GetMapping("/toggle/humidity/{label}/status")
-    fun humidityStatus(@PathVariable label: String): CoolingStatus {
-        return CoolingStatus(humidity.find(label).isCooling)
+    @GetMapping("/toggle/humidity/{boxId}/status")
+    fun humidityStatus(@PathVariable boxId: String): CoolingStatus {
+        return CoolingStatus(humidity.find(boxId).isCooling)
     }
 
-    @PostMapping("/humidity/{label}/toggle")
-    fun toggleHumidity(@PathVariable label: String): CoolingStatus {
-        return humidity.find(label).toggle()
+    @PostMapping("/humidity/{boxId}/toggle")
+    fun toggleHumidity(@PathVariable boxId: String): CoolingStatus {
+        return humidity.find(boxId).toggle()
     }
 
-    @GetMapping("/toggle/pressure/{label}/status")
-    fun pressureStatus(@PathVariable label: String): CoolingStatus {
-        return CoolingStatus(pressure.find(label).isCooling)
+    @GetMapping("/toggle/pressure/{boxId}/status")
+    fun pressureStatus(@PathVariable boxId: String): CoolingStatus {
+        return CoolingStatus(pressure.find(boxId).isCooling)
     }
 
-    @PostMapping("/pressure/{label}/toggle")
-    fun togglePressure(@PathVariable label: String): CoolingStatus {
-        return pressure.find(label).toggle()
+    @PostMapping("/pressure/{boxId}/toggle")
+    fun togglePressure(@PathVariable boxId: String): CoolingStatus {
+        return pressure.find(boxId).toggle()
     }
 }
 

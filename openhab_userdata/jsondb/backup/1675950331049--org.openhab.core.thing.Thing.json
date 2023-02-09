@@ -1,0 +1,434 @@
+{
+  "http:url:2e512d80cb": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:2e512d80cb:Humidity_Box1_Switch_Status",
+          "id": "Humidity_Box1_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Humidity_Box1_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 1 Dehumidifer",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/humidity/1/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:2e512d80cb",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:43f2dd7ad9": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:43f2dd7ad9:Pressure_Box3_Switch_Status",
+          "id": "Pressure_Box3_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Pressure_Box3_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 3 Pressure Valve",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/pressure/3/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:43f2dd7ad9",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:a3fc21c379": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:a3fc21c379:Temperature_Box1_Switch_Status",
+          "id": "Temperature_Box1_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Temperature_Box1_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 1 Cooling Switch",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/temperature/1/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:a3fc21c379",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:d541fa109c": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:d541fa109c:Humidity_Box2_Switch_Status",
+          "id": "Humidity_Box2_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Humidity_Box2_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 2 Dehumidifier",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/humidity/2/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:d541fa109c",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:d75735bc22": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:d75735bc22:Humidity_Box3_Switch_Status",
+          "id": "Humidity_Box3_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Humidity_Box3_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 3 Dehumidifier",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/humidity/3/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:d75735bc22",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:dd24f8ce3b": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:dd24f8ce3b:Temperature_Box2_Switch_Status",
+          "id": "Temperature_Box2_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Temperature_Box2_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 2 Cooling Switch",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/temperature/2/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:dd24f8ce3b",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:de13633318": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:de13633318:Pressure_Box2_Switch_Status",
+          "id": "Pressure_Box2_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Pressure_Box2_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 2 Pressure Valve",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/pressure/2/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:de13633318",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:e4394376c6": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:e4394376c6:Temperature_Box3_Switch_Status",
+          "id": "Temperature_Box3_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Temperature_Box3_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 3 Cooling Switch",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/temperature/3/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:e4394376c6",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "http:url:fecd654f7d": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": false,
+      "channels": [
+        {
+          "uid": "http:url:fecd654f7d:Pressure_Box1_Switch_Status",
+          "id": "Pressure_Box1_Switch_Status",
+          "channelTypeUID": "http:switch",
+          "itemType": "Switch",
+          "kind": "STATE",
+          "label": "Pressure_Box1_Switch_Status",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "offValue": "false",
+            "onValue": "true",
+            "stateTransformation": "JSONPATH:$.isCooling"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "Box 1 Pressure Valve",
+      "configuration": {
+        "authMode": "BASIC",
+        "baseURL": "http://host.docker.internal:8080/api/v1/toggle/pressure/1/status",
+        "bufferSize": 2048,
+        "commandMethod": "GET",
+        "delay": 0,
+        "ignoreSSLErrors": false,
+        "refresh": 2,
+        "stateMethod": "GET",
+        "timeout": 3000
+      },
+      "properties": {},
+      "UID": "http:url:fecd654f7d",
+      "thingTypeUID": "http:url"
+    }
+  },
+  "mqtt:broker:e6446d684c": {
+    "class": "org.openhab.core.thing.internal.ThingStorageEntity",
+    "value": {
+      "isBridge": true,
+      "channels": [
+        {
+          "uid": "mqtt:broker:e6446d684c:Temperature",
+          "id": "Temperature",
+          "channelTypeUID": "mqtt:publishTrigger",
+          "kind": "TRIGGER",
+          "label": "Temperature",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "stateTopic": "temperature"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:broker:e6446d684c:Pressure",
+          "id": "Pressure",
+          "channelTypeUID": "mqtt:publishTrigger",
+          "kind": "TRIGGER",
+          "label": "Pressure",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "stateTopic": "pressure"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        },
+        {
+          "uid": "mqtt:broker:e6446d684c:Humidity",
+          "id": "Humidity",
+          "channelTypeUID": "mqtt:publishTrigger",
+          "kind": "TRIGGER",
+          "label": "Humidity",
+          "description": "",
+          "defaultTags": [],
+          "properties": {},
+          "configuration": {
+            "stateTopic": "humidity"
+          },
+          "autoUpdatePolicy": "DEFAULT"
+        }
+      ],
+      "label": "MQTT Broker",
+      "configuration": {
+        "birthRetain": true,
+        "certificatepin": true,
+        "clientid": "9d8e2384-e51b-4d5a-acc6-0ef566291c80",
+        "enableDiscovery": true,
+        "host": "mqtt",
+        "hostnameValidated": true,
+        "keepAlive": 60,
+        "lwtQos": 0,
+        "lwtRetain": true,
+        "mqttVersion": "V3",
+        "protocol": "TCP",
+        "publickeypin": true,
+        "qos": 0,
+        "reconnectTime": 60000,
+        "secure": false,
+        "shutdownRetain": false
+      },
+      "properties": {},
+      "UID": "mqtt:broker:e6446d684c",
+      "thingTypeUID": "mqtt:broker"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.openhab.binding.mqtt.homeassistant-3.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/openhab_userdata/tmp/mvn/org/openhab/addons/bundles/org.openhab.binding.mqtt.homeassistant/3.4.1/org.openhab.binding.mqtt.homeassistant-3.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.openhab.persistence.rrd4j-3.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/openhab_userdata/tmp/mvn/org/openhab/addons/bundles/org.openhab.persistence.rrd4j/3.4.1/org.openhab.persistence.rrd4j-3.4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

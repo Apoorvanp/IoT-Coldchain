@@ -1,0 +1,280 @@
+{
+  "Box1_Pressure_Switch_State -\u003e http:url:fecd654f7d:T1B1_Pressure_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "fecd654f7d",
+          "T1B1_Pressure_Channel"
+        ],
+        "uid": "http:url:fecd654f7d:T1B1_Pressure_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box1_Pressure_Switch_State"
+    }
+  },
+  "Box2_Humidity_Switch_State -\u003e http:url:d541fa109c:T1B2_Humidity_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "d541fa109c",
+          "T1B2_Humidity_Channel"
+        ],
+        "uid": "http:url:d541fa109c:T1B2_Humidity_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box2_Humidity_Switch_State"
+    }
+  },
+  "Box2_Pressure_Switch_State -\u003e http:url:de13633318:T1B2_Pressure_Channel": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "de13633318",
+          "T1B2_Pressure_Channel"
+        ],
+        "uid": "http:url:de13633318:T1B2_Pressure_Channel"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box2_Pressure_Switch_State"
+    }
+  },
+  "Box2_Temperature_Switch_State -\u003e http:url:dd24f8ce3b:Temperature_T1B2_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "dd24f8ce3b",
+          "Temperature_T1B2_Switch_Status"
+        ],
+        "uid": "http:url:dd24f8ce3b:Temperature_T1B2_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box2_Temperature_Switch_State"
+    }
+  },
+  "Box_1_Cooling_Switch_Temperature_Box1_Switch_Status -\u003e http:url:a3fc21c379:Temperature_Box1_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "a3fc21c379",
+          "Temperature_Box1_Switch_Status"
+        ],
+        "uid": "http:url:a3fc21c379:Temperature_Box1_Switch_Status"
+      },
+      "configuration": {
+        "properties": {
+          "profile": "system:default"
+        }
+      },
+      "itemName": "Box_1_Cooling_Switch_Temperature_Box1_Switch_Status"
+    }
+  },
+  "Box_1_Dehumidifer_Humidity_Box1_Switch_Status -\u003e http:url:2e512d80cb:Humidity_Box1_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "2e512d80cb",
+          "Humidity_Box1_Switch_Status"
+        ],
+        "uid": "http:url:2e512d80cb:Humidity_Box1_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_1_Dehumidifer_Humidity_Box1_Switch_Status"
+    }
+  },
+  "Box_1_Pressure_Valve_Pressure_Box1_Switch_Status -\u003e http:url:fecd654f7d:Pressure_Box1_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "fecd654f7d",
+          "Pressure_Box1_Switch_Status"
+        ],
+        "uid": "http:url:fecd654f7d:Pressure_Box1_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_1_Pressure_Valve_Pressure_Box1_Switch_Status"
+    }
+  },
+  "Box_2_Cooling_Switch_Temperature_Box2_Switch_Status -\u003e http:url:dd24f8ce3b:Temperature_Box2_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "dd24f8ce3b",
+          "Temperature_Box2_Switch_Status"
+        ],
+        "uid": "http:url:dd24f8ce3b:Temperature_Box2_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_2_Cooling_Switch_Temperature_Box2_Switch_Status"
+    }
+  },
+  "Box_2_Dehumidifier_Humidity_Box2_Switch_Status -\u003e http:url:d541fa109c:Humidity_Box2_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "d541fa109c",
+          "Humidity_Box2_Switch_Status"
+        ],
+        "uid": "http:url:d541fa109c:Humidity_Box2_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_2_Dehumidifier_Humidity_Box2_Switch_Status"
+    }
+  },
+  "Box_2_Pressure_Valve_Pressure_Box2_Switch_Status -\u003e http:url:de13633318:Pressure_Box2_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "de13633318",
+          "Pressure_Box2_Switch_Status"
+        ],
+        "uid": "http:url:de13633318:Pressure_Box2_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_2_Pressure_Valve_Pressure_Box2_Switch_Status"
+    }
+  },
+  "Box_3_Cooling_Switch_Temperature_Box3_Switch_Status -\u003e http:url:e4394376c6:Temperature_Box3_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "e4394376c6",
+          "Temperature_Box3_Switch_Status"
+        ],
+        "uid": "http:url:e4394376c6:Temperature_Box3_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_3_Cooling_Switch_Temperature_Box3_Switch_Status"
+    }
+  },
+  "Box_3_Dehumidifier_Humidity_Box3_Switch_Status -\u003e http:url:d75735bc22:Humidity_Box3_Switch_Status": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "http",
+          "url",
+          "d75735bc22",
+          "Humidity_Box3_Switch_Status"
+        ],
+        "uid": "http:url:d75735bc22:Humidity_Box3_Switch_Status"
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "Box_3_Dehumidifier_Humidity_Box3_Switch_Status"
+    }
+  },
+  "MQTT_Broker_Humidity -\u003e mqtt:broker:e6446d684c:Humidity": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "broker",
+          "e6446d684c",
+          "Humidity"
+        ],
+        "uid": "mqtt:broker:e6446d684c:Humidity"
+      },
+      "configuration": {
+        "properties": {
+          "profile": "system:trigger-event-string"
+        }
+      },
+      "itemName": "MQTT_Broker_Humidity"
+    }
+  },
+  "MQTT_Broker_Pressure -\u003e mqtt:broker:e6446d684c:Pressure": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "broker",
+          "e6446d684c",
+          "Pressure"
+        ],
+        "uid": "mqtt:broker:e6446d684c:Pressure"
+      },
+      "configuration": {
+        "properties": {
+          "profile": "system:trigger-event-string"
+        }
+      },
+      "itemName": "MQTT_Broker_Pressure"
+    }
+  },
+  "MQTT_Broker_Temperature -\u003e mqtt:broker:e6446d684c:Temperature": {
+    "class": "org.openhab.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "mqtt",
+          "broker",
+          "e6446d684c",
+          "Temperature"
+        ],
+        "uid": "mqtt:broker:e6446d684c:Temperature"
+      },
+      "configuration": {
+        "properties": {
+          "profile": "system:trigger-event-string"
+        }
+      },
+      "itemName": "MQTT_Broker_Temperature"
+    }
+  }
+}
