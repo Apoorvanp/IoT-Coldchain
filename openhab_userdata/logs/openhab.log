@@ -1,29 +1,16 @@
-2023-02-10 19:09:40.451 [INFO ] [.core.model.lsp.internal.ModelServer] - Started Language Server Protocol (LSP) service on port 5007
-2023-02-10 19:09:42.530 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Started HABPanel at /habpanel
-2023-02-10 19:09:42.688 [WARN ] [ty.util.ssl.SslContextFactory.config] - Trusting all certificates configured for Client@16b1c10d[provider=null,keyStore=null,trustStore=null]
-2023-02-10 19:09:42.689 [WARN ] [ty.util.ssl.SslContextFactory.config] - No Client EndPointIdentificationAlgorithm configured for Client@16b1c10d[provider=null,keyStore=null,trustStore=null]
-2023-02-10 19:09:42.736 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:e4394376c6'.
-2023-02-10 19:09:42.748 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:de13633318'.
-2023-02-10 19:09:42.775 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:2e512d80cb'.
-2023-02-10 19:09:42.779 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:43f2dd7ad9'.
-2023-02-10 19:09:42.797 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:a3fc21c379'.
-2023-02-10 19:09:42.803 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d541fa109c'.
-2023-02-10 19:09:42.810 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:dd24f8ce3b'.
-2023-02-10 19:09:42.815 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:fecd654f7d'.
-2023-02-10 19:09:42.819 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d75735bc22'.
-2023-02-10 19:09:43.104 [INFO ] [.transport.mqtt.MqttBrokerConnection] - Starting MQTT broker connection to 'mqtt' with clientid 279b59c5-bba0-4c6b-990f-28fea784104e
-2023-02-10 19:09:49.647 [INFO ] [e.automation.internal.RuleEngineImpl] - Rule engine started.
-2023-02-10 19:28:44.663 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Stopped HABPanel
-2023-02-10 19:28:44.781 [INFO ] [basic.internal.servlet.WebAppServlet] - Stopped Basic UI
-2023-02-10 19:28:45.327 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_3_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '3' will no longer work.
-2023-02-10 19:28:45.329 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_1_pressure' needed for rule '1dcd0a8d75' removed. Trigger '1' will no longer work.
-2023-02-10 19:28:45.330 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_2_pressure' needed for rule '1dcd0a8d75' removed. Trigger '2' will no longer work.
-2023-02-10 19:28:45.331 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_1_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '1' will no longer work.
-2023-02-10 19:28:45.332 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Humidity' needed for rule 'fa209338f3' removed. Trigger '1' will no longer work.
-2023-02-10 19:28:45.334 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_1_temperature' needed for rule 'f01b4833b6' removed. Trigger '1' will no longer work.
-2023-02-10 19:28:45.334 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_2_temperature' needed for rule 'f01b4833b6' removed. Trigger '4' will no longer work.
-2023-02-10 19:28:45.335 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_3_pressure' needed for rule '1dcd0a8d75' removed. Trigger '3' will no longer work.
-2023-02-10 19:28:45.336 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_3_temperature' needed for rule 'f01b4833b6' removed. Trigger '5' will no longer work.
-2023-02-10 19:28:45.337 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Temperature' needed for rule '9801bc9344' removed. Trigger '1' will no longer work.
-2023-02-10 19:28:45.338 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'Box_2_humidity' needed for rule 'bdb79a3a7f' removed. Trigger '2' will no longer work.
-2023-02-10 19:28:45.338 [WARN ] [dule.handler.ItemStateTriggerHandler] - Item 'MQTT_Broker_Pressure' needed for rule 'd99ad0369c' removed. Trigger '1' will no longer work.
+2023-02-19 22:36:20.531 [INFO ] [.core.model.lsp.internal.ModelServer] - Started Language Server Protocol (LSP) service on port 5007
+2023-02-19 22:36:21.672 [INFO ] [ab.ui.habpanel.internal.HABPanelTile] - Started HABPanel at /habpanel
+2023-02-19 22:36:21.783 [WARN ] [ty.util.ssl.SslContextFactory.config] - Trusting all certificates configured for Client@3768f814[provider=null,keyStore=null,trustStore=null]
+2023-02-19 22:36:21.785 [WARN ] [ty.util.ssl.SslContextFactory.config] - No Client EndPointIdentificationAlgorithm configured for Client@3768f814[provider=null,keyStore=null,trustStore=null]
+2023-02-19 22:36:21.801 [WARN ] [core.thing.internal.ThingManagerImpl] - No config description for 'channel-type:http:channel-config-switch' found when normalizing configuration for 'http:url:e4394376c6:Temperature_Box3_Switch_Status'. This is probably a bug.
+2023-02-19 22:36:21.809 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:e4394376c6'.
+2023-02-19 22:36:21.820 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:de13633318'.
+2023-02-19 22:36:21.830 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:2e512d80cb'.
+2023-02-19 22:36:21.843 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:43f2dd7ad9'.
+2023-02-19 22:36:21.854 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:a3fc21c379'.
+2023-02-19 22:36:21.876 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d541fa109c'.
+2023-02-19 22:36:21.879 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:dd24f8ce3b'.
+2023-02-19 22:36:21.885 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:fecd654f7d'.
+2023-02-19 22:36:21.890 [INFO ] [nding.http.internal.HttpThingHandler] - Using the secure client for thing 'http:url:d75735bc22'.
+2023-02-19 22:36:22.143 [INFO ] [.transport.mqtt.MqttBrokerConnection] - Starting MQTT broker connection to 'mqtt' with clientid 406259e1-1ee7-4b5d-bbf9-6b7b43fe7690
+2023-02-19 22:36:30.477 [INFO ] [e.automation.internal.RuleEngineImpl] - Rule engine started.
