@@ -10,7 +10,7 @@ cd IoT-Coldchain
 ```
 Checkout demo branch
 ```shell
-git checkout demo
+git checkout feature/added-truck-id
 ```
 ## Running the project
 Navigate to Kotlin project directory
